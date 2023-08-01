@@ -1,26 +1,39 @@
-//
-//  ContentView.swift
-//  SayHello
-//
-//  Created by 阿部 紘明 on 2023/08/01.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+  @State var name: String = ""
+  @State var text: String = ""
+  @State var nameVisibility: Bool = false
+  private let sayHello = SayHello()
+
+  var body: some View {
+    VStack {
+      VStack {
+        TextField("名前を入力", text: $name)
+          .textFieldStyle(RoundedBorderTextFieldStyle())
+          .padding()
+          .onChange(of: name) { newValue in
+            nameVisibility = false
+          }
+          .accessibilityIdentifier("NameField")
+        Button("送信") {
+          text = self.sayHello.sayHello(name: name)
+          nameVisibility = !name.isEmpty
         }
-        .padding()
+        .accessibilityIdentifier("SendButton")
+      }
+      if nameVisibility {
+        Text(text)
+          .padding()
+          .accessibilityIdentifier("NameText")
+      }
+      Spacer()
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

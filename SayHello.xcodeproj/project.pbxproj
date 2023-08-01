@@ -14,6 +14,7 @@
 		53D081092A78A82900A981B2 /* SayHelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D081082A78A82900A981B2 /* SayHelloTests.swift */; };
 		53D081132A78A82900A981B2 /* SayHelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D081122A78A82900A981B2 /* SayHelloUITests.swift */; };
 		53D081152A78A82900A981B2 /* SayHelloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D081142A78A82900A981B2 /* SayHelloUITestsLaunchTests.swift */; };
+		53D081222A78A90500A981B2 /* SayHello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D081212A78A90500A981B2 /* SayHello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		53D0810E2A78A82900A981B2 /* SayHelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SayHelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D081122A78A82900A981B2 /* SayHelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloUITests.swift; sourceTree = "<group>"; };
 		53D081142A78A82900A981B2 /* SayHelloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53D081212A78A90500A981B2 /* SayHello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				53D080F92A78A82800A981B2 /* ContentView.swift */,
 				53D080FB2A78A82900A981B2 /* Assets.xcassets */,
 				53D080FD2A78A82900A981B2 /* Preview Content */,
+				53D081212A78A90500A981B2 /* SayHello.swift */,
 			);
 			path = SayHello;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				53D080FA2A78A82800A981B2 /* ContentView.swift in Sources */,
 				53D080F82A78A82800A981B2 /* SayHelloApp.swift in Sources */,
+				53D081222A78A90500A981B2 /* SayHello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
