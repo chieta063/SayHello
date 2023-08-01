@@ -7,7 +7,7 @@ final class SayHelloUITests: XCTestCase {
 
   override func tearDownWithError() throws {}
 
-  func test名前入力後に送信ボタンを押したらNameTextが表示されていること() throws {
+  func test_名前入力後に送信ボタンを押したらNameTextが表示されていること() throws {
     let app = XCUIApplication()
     app.launch()
     sleep(3)
@@ -21,7 +21,7 @@ final class SayHelloUITests: XCTestCase {
     XCTAssert(nameText.exists)
   }
   
-  func testテキストが表示されている状態でテキスト編集をしたらテキストが非表示になること() throws {
+  func test_テキストが表示されている状態でテキスト編集をしたらテキストが非表示になること() throws {
     let app = XCUIApplication()
     app.launch()
     sleep(3)
