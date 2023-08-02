@@ -3,3 +3,7 @@ workflows:
     name: Codemagic Sample Workflow
     max_build_duration: 120
     instance_type: mac_mini_m1
+  hello-world:
+    name: Hello World Workflow
+    scripts:
+      - echo "Hello world!"
